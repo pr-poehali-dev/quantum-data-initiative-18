@@ -41,11 +41,11 @@ export default function HeroSection() {
         ))}
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
 
       <div className="relative z-10 flex h-full items-center">
         <div className="container mx-auto px-8 md:px-16">
-          <div className="flex max-w-2xl flex-col gap-12">
+          <div className="flex max-w-2xl flex-col gap-10">
             {/* Portrait */}
             <div
               className={cn(
@@ -53,10 +53,10 @@ export default function HeroSection() {
                 isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               )}
             >
-              <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-2xl md:h-64 md:w-64">
+              <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white/80 shadow-2xl md:h-64 md:w-64">
                 <img
-                  src="https://cdn.poehali.dev/templates/creative-portfolio-ru/portrait.jpg"
-                  alt="Креативный специалист"
+                  src="https://cdn.poehali.dev/files/61ad16d9-68db-4350-bd33-2411fe45a343.jpeg"
+                  alt="Гукосян Оксана Баградовна"
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -68,13 +68,21 @@ export default function HeroSection() {
                 isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               )}
             >
-              <div className="space-y-4">
+              <div className="space-y-3">
+                <p className="text-sm font-medium uppercase tracking-widest text-white/50">
+                  OpticStyle
+                </p>
                 <p className="text-3xl font-light text-white md:text-4xl lg:text-5xl">
-                  Алексей Иванов
+                  Гукосян Оксана&nbsp;Баградовна
                 </p>
                 <p className="text-xl font-light text-white/80 md:text-2xl">
-                  Креативный директор | Дизайнер
+                  Офтальмолог · Рефракционный хирург
                 </p>
+                <p className="max-w-md pt-2 text-base font-light leading-relaxed text-white/60">
+                  Специализация на лазерной коррекции зрения и хирургии катаракты.
+                  Точность, забота и современные технологии — для каждого пациента.
+                </p>
+
                 <div className="flex gap-6 pt-4">
                   <a
                     href="https://t.me/"
